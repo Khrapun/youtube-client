@@ -1,0 +1,159 @@
+body {
+  background-color: rgb(228, 228, 228);
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  width: 20vw;
+  background-color: white;
+  margin: 2vh 2vw;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 10px;
+  border: solid 1px rgb(124, 124, 124);
+}
+
+ul li {
+  margin: 0 auto;
+  background-color: white;
+  padding: 6px 0px;
+}
+
+ul li a {
+  color: black;
+}
+
+ul li img {
+  margin: 0 auto;
+  width: 20vw;
+  height: 32vh;
+}
+
+ul li:nth-child(2) {
+  padding: 10px;
+}
+
+ul li:last-child {
+  padding: 10px;
+  color: grey;
+  font-size: 14px;
+}
+
+ul li i {
+  color: rgb(59, 55, 55);
+  margin-right: 5px;
+}
+/* ///////////////////////////////// */
+#search-form {
+  display: flex;
+}
+
+#input {
+  width: 50vw;
+  height: 5vh;
+  padding-left: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: rgb(65, 61, 61);
+  font-size: 20px;
+  font-weight: bolder;
+}
+#input:focus {
+  background-color: rgb(243, 201, 201);
+}
+form button {
+  outline: none;
+  border: none;
+  background-color: rgb(228, 228, 228);
+  zoom: 2;
+}
+form button:hover {
+  color: white;
+}
+
+#app {
+  overflow-x: hidden;
+}
+#cardContainer {
+  margin-top: 45px;
+  --n: 1;
+  transform: translate(calc(var(--i, 0) / var(--n) * -100%));
+  transition: transform 0.5s ease-out;
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  width: calc(var(--n) * 100%);
+  height: 100%;
+}
+.cards {
+  width: 100%;
+  height: 30%;
+  background: rgb(228, 228, 228);
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  width: 20vw;
+  background-color: white;
+  margin: 2vh 2vw;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 10px;
+  border: solid 1px rgb(124, 124, 124);
+}
+.card div {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.card div i {
+  margin: 0 1vw 0 0;
+  color: rgb(48, 46, 46);
+}
+.card__description {
+  color: rgb(73, 72, 72);
+  font-size: 14px;
+  margin-left: 1vw;
+}
+#pagginateContainer {
+  display: flex;
+  flex-flow: row;
+}
+.pagginate-elem {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  color: black;
+}
+.card__thumbnails a  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+  margin-top: 8vh;
+  width: 20vw;
+  height: 8vh;
+  background-color: rgba(248, 248, 91, 0.9);
+  position: absolute;
+}
+.pagginate__current {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(248, 248, 91, 0.9);
+}
